@@ -1,0 +1,330 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Obsidian Vault via GitHub",
+    "description": "Search, read, create, and update Markdown notes in one private GitHub repository used as an Obsidian Vault.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.github.com"
+    }
+  ],
+  "paths": {
+    "/search/code": {
+      "get": {
+        "operationId": "searchVault",
+        "summary": "Search Markdown notes in the Vault repository",
+        "description": "Search GitHub code. Set q to: search terms repo:OWNER/REPO extension:md. Private repository search requires the configured Bearer token.",
+        "x-openai-isConsequential": false,
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "description": "GitHub code search query, for example: motor learning repo:OWNER/neuro-tranning extension:md",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "per_page",
+            "in": "query",
+            "required": false,
+            "description": "Number of results, from 1 to 30.",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 30,
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Matching files",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "total_count": {
+                      "type": "integer"
+                    },
+                    "incomplete_results": {
+                      "type": "boolean"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "path": {
+                            "type": "string"
+                          },
+                          "sha": {
+                            "type": "string"
+                          },
+                          "url": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Bearer token is missing or invalid"
+          },
+          "403": {
+            "description": "Token lacks access, rate limit was reached, or search is forbidden"
+          },
+          "422": {
+            "description": "Search query is invalid"
+          }
+        }
+      }
+    },
+    "/repos/{owner}/{repo}/contents/{path}": {
+      "get": {
+        "operationId": "readVaultFile",
+        "summary": "Read a Vault Markdown file",
+        "description": "Return file metadata and Base64-encoded content. Decode content as UTF-8 Markdown before using it.",
+        "x-openai-isConsequential": false,
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "path",
+            "required": true,
+            "description": "GitHub account that owns the repository.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "repo",
+            "in": "path",
+            "required": true,
+            "description": "Repository name. Use neuro-tranning.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "path",
+            "in": "path",
+            "required": true,
+            "description": "Vault-relative file path, including .md. Preserve folder slashes.",
+            "schema": {
+              "type": "string"
+            },
+            "allowReserved": true
+          },
+          {
+            "name": "ref",
+            "in": "query",
+            "required": false,
+            "description": "Branch name. Use main unless configured otherwise.",
+            "schema": {
+              "type": "string",
+              "default": "main"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "File metadata and Base64 content",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GitHubContentFile"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Bearer token is missing or invalid"
+          },
+          "403": {
+            "description": "Token lacks repository access"
+          },
+          "404": {
+            "description": "Repository, branch, or file was not found"
+          }
+        }
+      },
+      "put": {
+        "operationId": "writeVaultFile",
+        "summary": "Create or update a Vault Markdown file",
+        "description": "Create a file by omitting sha. Update an existing file only after reading it and passing its latest sha. Encode UTF-8 Markdown as Base64 in content.",
+        "x-openai-isConsequential": true,
+        "parameters": [
+          {
+            "name": "owner",
+            "in": "path",
+            "required": true,
+            "description": "GitHub account that owns the repository.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "repo",
+            "in": "path",
+            "required": true,
+            "description": "Repository name. Use neuro-tranning.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "path",
+            "in": "path",
+            "required": true,
+            "description": "Allowed Vault-relative Markdown path defined by this GPT's Instructions. Preserve folder slashes.",
+            "schema": {
+              "type": "string"
+            },
+            "allowReserved": true
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WriteFileRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Existing file updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WriteFileResponse"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "New file created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WriteFileResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Bearer token is missing or invalid"
+          },
+          "403": {
+            "description": "Token lacks Contents read/write permission"
+          },
+          "404": {
+            "description": "Repository or branch was not found"
+          },
+          "409": {
+            "description": "SHA conflict or repository update conflict. Do not overwrite; create a timestamped draft instead."
+          },
+          "422": {
+            "description": "Validation failed, content is not valid Base64, or sha is missing for an update"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GitHubContentFile": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha": {
+            "type": "string"
+          },
+          "size": {
+            "type": "integer"
+          },
+          "encoding": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string",
+            "description": "Base64-encoded file content, possibly containing newline characters."
+          },
+          "html_url": {
+            "type": "string"
+          }
+        }
+      },
+      "WriteFileRequest": {
+        "type": "object",
+        "required": [
+          "message",
+          "content",
+          "branch"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "Short commit message describing the note change."
+          },
+          "content": {
+            "type": "string",
+            "contentEncoding": "base64",
+            "description": "Complete UTF-8 Markdown file encoded as Base64."
+          },
+          "branch": {
+            "type": "string",
+            "default": "main"
+          },
+          "sha": {
+            "type": "string",
+            "description": "Latest blob SHA. Required only when updating an existing file; omit when creating a new file."
+          }
+        }
+      },
+      "WriteFileResponse": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "$ref": "#/components/schemas/GitHubContentFile"
+          },
+          "commit": {
+            "type": "object",
+            "properties": {
+              "sha": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "html_url": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
