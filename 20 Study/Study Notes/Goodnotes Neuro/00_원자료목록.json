@@ -1,0 +1,330 @@
+[
+  {
+    "id": "01",
+    "name": "2025-2기 레벨 2 강의안 (1).pdf",
+    "pages": 114,
+    "size": 10492028,
+    "sha256": "38f787fe78bf7c706f15535620123d29db2cef9ef96de584fc42281ea53cb643",
+    "handling": "representative-added"
+  },
+  {
+    "id": "02",
+    "name": "2025-2기 레벨 2 강의안.pdf",
+    "pages": 114,
+    "size": 10157867,
+    "sha256": "96abf753cf9e1712ac868ff5a3b143d756fdc0e5901eb28621fd2e2ee487927c",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "03",
+    "name": "2025-3기 뉴로트레이닝_레벨1_강의안 (1).pdf",
+    "pages": 140,
+    "size": 13286113,
+    "sha256": "21edca97c9bfcac8b710309c6a7b7891c24f26090033a6d9a0d6e4f2ddb5cdab",
+    "handling": "representative-added"
+  },
+  {
+    "id": "04",
+    "name": "2025-3기 뉴로트레이닝_레벨1_강의안.pdf",
+    "pages": 140,
+    "size": 12942582,
+    "sha256": "8e602193d7a42290d01714197b3e120180b013b7f809df2f418e073a8de78857",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "05",
+    "name": "25 - 12 - 6  특강 8레벨(안전) (1).pdf",
+    "pages": 10,
+    "size": 64396,
+    "sha256": "74994cd2fb1ec2f26f2c7ba723345fa121c648d810f550f0436cb286e7086fbb",
+    "handling": "representative-added"
+  },
+  {
+    "id": "06",
+    "name": "25 - 12 - 6  특강 8레벨(안전).pdf",
+    "pages": 10,
+    "size": 80442,
+    "sha256": "4ca7f9e826ceedcb463ca64d72a09bf4140495a4d41cbfa5373a417c204f8b9e",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "07",
+    "name": "26 - 7 - 17 뉴로다이어트 (1).pdf",
+    "pages": 2,
+    "size": 39508,
+    "sha256": "c86dfaf9a4afe97ceedd4a44b0692d4c768a2e659db5b073a3d6143bf60664db",
+    "handling": "existing-material"
+  },
+  {
+    "id": "08",
+    "name": "26 - 7 - 17 뉴로다이어트.pdf",
+    "pages": 2,
+    "size": 53283,
+    "sha256": "e7edc0cd0b001d62430362bbc4d001f38f6360fa9e10bb39e2509f7566b50f9f",
+    "handling": "existing-material"
+  },
+  {
+    "id": "09",
+    "name": "26-4-27 레벨3 줌강의 (1).pdf",
+    "pages": 1,
+    "size": 28931,
+    "sha256": "10dc7b0f6d59b300143506ce590fa5656e44a79fa27d71a4fd4bec03d4f647e7",
+    "handling": "representative-added"
+  },
+  {
+    "id": "10",
+    "name": "26-4-27 레벨3 줌강의.pdf",
+    "pages": 1,
+    "size": 43190,
+    "sha256": "8002f987075b3a10880d1a7ed599fe9f64d37df98da2cf33e068224cfcdd86d1",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "11",
+    "name": "26. 1. 3 특강 (양육) (1).pdf",
+    "pages": 5,
+    "size": 50675,
+    "sha256": "eddd923c1a68c7600e7bd6f51d7dbd2513df05cfe2998ae97623c211c7d105ec",
+    "handling": "representative-added"
+  },
+  {
+    "id": "12",
+    "name": "26. 1. 3 특강 (양육).pdf",
+    "pages": 5,
+    "size": 64585,
+    "sha256": "e1109e2484dd7e6343331016dee9086e431fdb6f9344662eae4cc33d433858f5",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "13",
+    "name": "26.4.14 줌강의 (1).pdf",
+    "pages": 1,
+    "size": 4932,
+    "sha256": "659e80617998d5707ce0fcab79aaba3388ab5698d3e75ebd1e3194134d2d2929",
+    "handling": "no-substantive-text"
+  },
+  {
+    "id": "14",
+    "name": "26.4.14 줌강의.pdf",
+    "pages": 1,
+    "size": 7563,
+    "sha256": "5ed81585970fd8b069650c544982931e930c873e5c2814dd80985c3453af5c91",
+    "handling": "no-substantive-text"
+  },
+  {
+    "id": "15",
+    "name": "26.6.27 뉴로 스트레칭.pdf",
+    "pages": 2,
+    "size": 47246,
+    "sha256": "2e5595f39181f327e7a2e6edfed56e46d3435bfb1daf8422b0f1a07a0ba575bb",
+    "handling": "representative-added"
+  },
+  {
+    "id": "16",
+    "name": "26.9 뉴로산후.pdf",
+    "pages": 5,
+    "size": 72433,
+    "sha256": "eab6fe195466c1ac3af394c721de79d306ed5f0172945b6150e7b6495b0d41f3",
+    "handling": "existing-material"
+  },
+  {
+    "id": "17",
+    "name": "26.9 뉴로산후.pdf.pdf",
+    "pages": 5,
+    "size": 72589,
+    "sha256": "939afbb7b28f834ce6701ea9aa9a4834bc2c5373c79005b5962208165fcbd3a6",
+    "handling": "existing-material"
+  },
+  {
+    "id": "18",
+    "name": "TalkFile_2026 레벨3 강의안.pdf.pdf",
+    "pages": 76,
+    "size": 65695321,
+    "sha256": "490e45b78d5d37df5e170d9bcada7df764d06f11656c065b33b6eb6fa3835252",
+    "handling": "representative-added"
+  },
+  {
+    "id": "19",
+    "name": "TalkFile_2026 레벨4 강의안.pdf.pdf",
+    "pages": 94,
+    "size": 7246944,
+    "sha256": "f571bd41e70626feeff9f38ce3cc58f62197e259b4395497d35b5e28d4e26c8c",
+    "handling": "representative-added"
+  },
+  {
+    "id": "20",
+    "name": "TalkFile_2026레벨3 NMT.pdf (1).pdf",
+    "pages": 131,
+    "size": 6503040,
+    "sha256": "89bea85e89321927691aa3a202a3f358ea0e756828e6bedcb358676e8ed9a4e4",
+    "handling": "representative-added"
+  },
+  {
+    "id": "21",
+    "name": "TalkFile_2026레벨3 NMT.pdf.pdf",
+    "pages": 131,
+    "size": 9053938,
+    "sha256": "5d226af5c2748e960c714c7bd9c0b5468b2d4c1801fb805c98f34a4e3ce83f89",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "22",
+    "name": "TalkFile_26뉴로산전.pdf.pdf",
+    "pages": 60,
+    "size": 213847022,
+    "sha256": "b1a993fdec2573eedeb31667f3439002b7cb22aceba80d808349a590d8811908",
+    "handling": "representative-added"
+  },
+  {
+    "id": "23",
+    "name": "TalkFile_proprioception 세부티칭26년1기.pdf.pdf",
+    "pages": 35,
+    "size": 7335453,
+    "sha256": "2022a79d794a9b1e52cc50530b4d90d43b729dee5adf336f7a4a117e0dae2abd",
+    "handling": "representative-added"
+  },
+  {
+    "id": "24",
+    "name": "TalkFile_스트랭스 혈류압박법.pdf (1).pdf",
+    "pages": 16,
+    "size": 19009420,
+    "sha256": "1326245bbafc1980d059a9fdd3b1bb60337fcd0bf2a56d615e7f6ef765554451",
+    "handling": "representative-added"
+  },
+  {
+    "id": "25",
+    "name": "TalkFile_스트랭스 혈류압박법.pdf.pdf",
+    "pages": 16,
+    "size": 19008772,
+    "sha256": "144e365aeedcf9f03a38c67632d04c970ef350465e1556847d75e7aed3e81a58",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "26",
+    "name": "TalkFile_해부학 1.pdf (1).pdf",
+    "pages": 152,
+    "size": 59189649,
+    "sha256": "fda3bf51c971c09df689f2d71dcaf34423df2e53801463b734bb970304e8100a",
+    "handling": "representative-added"
+  },
+  {
+    "id": "27",
+    "name": "TalkFile_해부학 1.pdf.pdf",
+    "pages": 152,
+    "size": 62605950,
+    "sha256": "6dbfa7eac6a45bb84c20164d1475f2bf1b1879c242c3ec1dfdedba376c916982",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "28",
+    "name": "cn12 강의.pdf",
+    "pages": 1,
+    "size": 31248,
+    "sha256": "92838b08d9f3820820e38356b359b2c8183033db7adf1c10f31d717a64c7c1d2",
+    "handling": "representative-added"
+  },
+  {
+    "id": "29",
+    "name": "cn12.pdf",
+    "pages": 2,
+    "size": 614680,
+    "sha256": "a77c6a0a07fee8944d4cc372365f094508f830712f1d2d26d6f16e3e50dc3192",
+    "handling": "representative-added"
+  },
+  {
+    "id": "30",
+    "name": "cn12kang.pdf",
+    "pages": 284,
+    "size": 101504794,
+    "sha256": "b7bf4fe0f9896bb5ae07dfe4a086bd87570bb9c133e07583eb9866825c2f2912",
+    "handling": "representative-added"
+  },
+  {
+    "id": "31",
+    "name": "cn12kim.pdf",
+    "pages": 36,
+    "size": 14094398,
+    "sha256": "677ed7c2c7450ea3ec89149749be22797f9ac16267b399d2ac755be691cb3137",
+    "handling": "representative-added"
+  },
+  {
+    "id": "32",
+    "name": "cn12줌강의.pdf",
+    "pages": 3,
+    "size": 6343291,
+    "sha256": "bf7c33b726012efc5b6e0029681fa4b87f9d59767f6fa5a97477a890ac9cfbec",
+    "handling": "representative-added"
+  },
+  {
+    "id": "33",
+    "name": "고운샘_체중감량_체형자세_산후영양-1.pdf",
+    "pages": 43,
+    "size": 1029883,
+    "sha256": "69b75587d494f802fd8283f5fa5f33e1f7177d6bf035a6c5714a4e2c2a1af76b",
+    "handling": "existing-material"
+  },
+  {
+    "id": "34",
+    "name": "다이어트 강의자료.pdf.pdf",
+    "pages": 48,
+    "size": 14937218,
+    "sha256": "85c53806849934fbec1ef3ec305fe07dc482c2ceb93dde31f7fb2aa3e04b2fd6",
+    "handling": "existing-material"
+  },
+  {
+    "id": "35",
+    "name": "레벨3 현장강의 (1).pdf",
+    "pages": 2,
+    "size": 29571,
+    "sha256": "50df1d8c176b13d0b590fff9a764b268ccca7cf9654adc21763017b7b9119ec8",
+    "handling": "representative-added"
+  },
+  {
+    "id": "36",
+    "name": "레벨3 현장강의.pdf",
+    "pages": 2,
+    "size": 21187,
+    "sha256": "e16730aaadb436f4efe1b847bb70572759d321d1de88bb6cd6ad282235d507fb",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "37",
+    "name": "산전 줌강의.pdf",
+    "pages": 3,
+    "size": 58121,
+    "sha256": "d9f7e2a16696e5f758952d20872f295a42e2f28a20f1b357a7a164b188bc6dea",
+    "handling": "representative-added"
+  },
+  {
+    "id": "38",
+    "name": "산후강의자료.pdf.pdf",
+    "pages": 22,
+    "size": 10208849,
+    "sha256": "961904f18b1807201b8ce70d12e26bf9fb71a861fa25ec0d536e4c155115ddce",
+    "handling": "existing-material"
+  },
+  {
+    "id": "39",
+    "name": "스트렝스 (1).pdf",
+    "pages": 2,
+    "size": 1582095,
+    "sha256": "31c1d256228f64aa5e1d15a2f80fa48929d7f2c95793cde7b9b82cacea0a9acb",
+    "handling": "representative-added"
+  },
+  {
+    "id": "40",
+    "name": "스트렝스.pdf",
+    "pages": 2,
+    "size": 1584458,
+    "sha256": "4a8c3956de68c401a8540a58e2d83744b9da56ea7be8e50e51a5c138804405fd",
+    "handling": "duplicate-version-compared"
+  },
+  {
+    "id": "41",
+    "name": "패스웨이 기본.pdf",
+    "pages": 19,
+    "size": 17417116,
+    "sha256": "ab2b8f5da78e2c96e06c75df36372c45a3501240b1e0ed2ce68a28a84e4c6506",
+    "handling": "representative-added"
+  }
+]
